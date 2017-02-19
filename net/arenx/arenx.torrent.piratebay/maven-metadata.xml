@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>net.arenx</groupId>
+  <artifactId>arenx.torrent.piratebay</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20170219082643</lastUpdated>
+  </versioning>
+</metadata>
