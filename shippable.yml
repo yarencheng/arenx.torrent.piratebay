@@ -2,12 +2,6 @@ language: java
 
 jdk:
    - oraclejdk8
-
-build:
-  ci:
-    #Create folders for test and code coverage
-    - mkdir -p shippable/testresults
-    - mkdir -p shippable/codecoverage
     
 after_success:
    - mvn clean cobertura:cobertura
