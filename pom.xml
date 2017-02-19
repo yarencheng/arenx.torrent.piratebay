@@ -125,6 +125,26 @@
 				<version>2.19.1</version>
 				<configuration>
 					<trimStackTrace>false</trimStackTrace>
+					<redirectTestOutputToFile>true</redirectTestOutputToFile>
+					<reportsDirectory>../shippable/testresults</reportsDirectory>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.surefire</groupId>
+						<artifactId>surefire-junit4</artifactId>
+						<version>2.7.2</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<format>xml</format>
+					<maxmem>256m</maxmem>
+					<aggregate>true</aggregate>
+					<outputDirectory>shippable/codecoverage</outputDirectory>
 				</configuration>
 			</plugin>
 		</plugins>
